@@ -44,7 +44,6 @@ class EODProcess extends Command
             CURLOPT_URL => "https://api.royalmail.net/shipping/v3/manifests",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_CUSTOMREQUEST => "POST",
-            CURLOPT_POSTFIELDS => "{\"PostingLocation\":\"9000446029\"}",
             CURLOPT_HTTPHEADER => [
                 "X-IBM-Client-Id: $client_id",
                 "X-RMG-Auth-Token: $token",
